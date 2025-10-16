@@ -1,0 +1,141 @@
+/* Minimalny reset  */
+html {
+  font-size: 16px; /* bazowy rozmiar czcionki */
+  font-family: system-ui, sans-serif; /* font systemowy */
+  line-height: 1.5; /* lepsza czytelność */
+}
+body {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 99vh;
+  background-color: #e8f8fc;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* nawigacja */
+nav {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: white;
+  padding: 1rem;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0.5rem 0;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  background-color: #2ab5e8;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+nav a:hover {
+  box-shadow: 3px 3px 5px lightblue;
+  background-color: #36a4c7;
+}
+
+/* przycisk powrotu */
+.back-button {
+  text-decoration: none;
+  background: #718093;
+  color: white;
+  padding: 0.5rem 3rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.back-button:hover {
+  background: #474a4f;
+  box-shadow: 3px 3px 5px lightblue;
+}
+
+/* formularz logowania */
+.login-form {
+  background-color: #ffffff;
+  border: 2px solid #2ab5e8;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.login-form label {
+  font-weight: 600;
+  color: #2f3640;
+  margin-bottom: 0.3rem;
+}
+
+.login-form input {
+  padding: 0.6rem;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #2ab5e8;
+  box-shadow: 0 0 4px rgba(42, 181, 232, 0.5);
+  outline: none;
+}
+
+.login-form button {
+  background-color: #2ab5e8;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #36a4c7;
+  box-shadow: 3px 3px 5px lightblue;
+}
+
+main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 2px solid black;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+h2 {
+  color: #266a7f;
+}
+article {
+  margin-right: auto;
+  margin-left: auto;
+}

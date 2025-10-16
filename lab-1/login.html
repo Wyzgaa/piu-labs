@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <h1>Login</h1>
+
+    <form action="https://httpbin.org/post" method="post" class="login-form">
+      <label for="username">Nazwa użytkownika</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Wpisz nazwę użytkownika"
+        required
+      />
+
+      <label for="password">Hasło</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Wpisz hasło"
+        required
+      />
+
+      <button type="submit">Zaloguj</button>
+    </form>
+    <a href="index.html" class="back-button">Powrót</a>
+  </body>
+</html>
