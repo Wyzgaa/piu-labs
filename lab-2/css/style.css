@@ -5,15 +5,53 @@ html {
   line-height: 1.5; /* lepsza czytelność */
 }
 body {
+  align-items: center;
   margin: 1rem;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1b1f;
 }
-
+h1
+{
+  color: white;
+}
 a {
-  color: #0066cc; /* niebieski kolor linków */
+  color: black; /* niebieski kolor linków */
   text-decoration: none; /* bez podkreślenia */
   font-size: 1.4rem;
 }
-a:hover {
-  text-decoration: underline; /* podkreślenie przy najechaniu */
+li
+{
+  list-style: none;
+  display: inline;
+  /* margin-left: 1rem;
+  margin-right: 1rem; */
+}
+nav{
+  width: 100%;
+  background-color: rgb(108, 252, 108);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 0;   
+}
+nav a
+{
+  margin: 0 1rem; 
+}
+nav a:hover
+{
+  color:white;
+}
+a[href=".."] {
+  color: white;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 0.3rem;
+  margin-top: 2rem;
+}
+
+a[href=".."]:hover {
+  box-shadow: 1px 1px 12px white;
 }
