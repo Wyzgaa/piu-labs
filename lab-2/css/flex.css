@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.theme-picker {
+  border: 2px solid #d97a00;
+  background-color: #fff5cc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid #d97a00;
+  background-color: #fff5cc;
+  padding: 20px;
+}
+
+.item {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 4rem;
+}
+
+body:has(input[type='radio'][value='blue']:checked) {
+  .container {
+    justify-content: space-between;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .item {
+    flex-basis: 30%;
+    background-color: blue;
+    @media (max-width: 1024px) {
+      min-width: 50%;
+    }
+  }
+}
+
+body:has(input[type='radio'][value='red']:checked) {
+  .container {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+  }
+  .item {
+    flex-grow: 1;
+    background-color: red;
+  }
+  @media (max-width: 1024px) {
+    .item:first-child {
+      width: 100%;
+    }
+  }
+  .item:nth-child(1) {
+    order: 3;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+  }
+  .item:nth-child(1)::after {
+    content: '(Jestem większy i na środku!)';
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.2rem;
+    color: #ffdddd;
+  }
+  .item:nth-child(2) {
+    order: 1;
+  }
+  .item:nth-child(3) {
+    order: 2;
+  }
+  .item:nth-child(4) {
+    order: 4;
+  }
+  .item:nth-child(5) {
+    order: 5;
+  }
+}
+
+body:has(input[type='radio'][value='green']:checked) {
+  .container {
+    flex-wrap: nowrap;
+    @media (max-width: 1024px) {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+  }
+  .item {
+    background-color: green;
+  }
+  @media (max-width: 1024px) {
+    .item:nth-child(1) {
+      width: 90%;
+    }
+    .item:nth-child(2) {
+      width: 75%;
+    }
+    .item:nth-child(3) {
+      width: 60%;
+    }
+    .item:nth-child(4) {
+      width: 45%;
+    }
+    .item:nth-child(5) {
+      width: 30%;
+    }
+  }
+  .item:nth-child(1) {
+    flex-grow: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &::before,
+    &::after {
+      content: '😀';
+      font-size: 2em;
+      margin: 0 0.3em 0.2em 0.3em;
+    }
+  }
+  .item:nth-child(2) {
+    flex-grow: 4;
+  }
+  .item:nth-child(3) {
+    flex-grow: 3;
+  }
+  .item:nth-child(4) {
+    flex-grow: 2;
+  }
+  .item:nth-child(5) {
+    flex-grow: 1;
+  }
+}
