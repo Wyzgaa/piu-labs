@@ -9,11 +9,16 @@ body {
   padding: 0;
 }
 
-a {
-  color: #0066cc; /* niebieski kolor linków */
-  text-decoration: none; /* bez podkreślenia */
-  font-size: 1.4rem;
+.back-button {
+  text-decoration: none;
+  background: #718093;
+  color: white;
+  padding: 0.5rem 3rem;
+  border-radius: 8px;
+  font-weight: 500;
 }
-a:hover {
-  text-decoration: underline; /* podkreślenie przy najechaniu */
+
+.back-button:hover {
+  background: #474a4f;
+  box-shadow: 3px 3px 5px lightblue;
 }

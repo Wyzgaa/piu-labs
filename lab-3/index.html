@@ -4,9 +4,69 @@
     <meta charset="UTF-8" />
     <title>Lab 3</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/polo.css" />
   </head>
   <body>
     <h1>Lab 3</h1>
-    <a href="..">Powrót</a>
+    <main>
+      <div id="product_container">
+        <input
+          type="radio"
+          id="radio_input_blue"
+          name="color"
+          value="Blue"
+          checked
+        />
+        <input type="radio" id="radio_input_red" name="color" value="Red" />
+        <input type="radio" id="radio_input_green" name="color" value="Green" />
+        <input
+          type="radio"
+          id="radio_input_yellow"
+          name="color"
+          value="Yellow"
+        />
+        <div id="product_image" class="product_image"></div>
+
+        <div class="product_card">
+          <div class="title_container">
+            <h2 id="product_title">Koszulka Polo</h2>
+            <p id="sale_marker">Promocja!</p>
+          </div>
+
+          <p class="product_info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            inventore sed aliquid!
+          </p>
+          <h3>Kolor</h3>
+          <div class="color-picker">
+            <label for="radio_input_blue" class="blue_label"></label>
+
+            <label for="radio_input_red" class="red_label"></label>
+
+            <label for="radio_input_green" class="green_label"></label>
+
+            <label for="radio_input_yellow" class="yellow_label"></label>
+          </div>
+          <h3>Rozmiar</h3>
+          <div class="size-picker">
+            <input type="radio" id="size_s" name="size" value="S" checked />
+            <label for="size_s">S</label>
+
+            <input type="radio" id="size_m" name="size" value="M" />
+            <label for="size_m">M</label>
+
+            <input type="radio" id="size_l" name="size" value="L" />
+            <label for="size_l">L</label>
+
+            <input type="radio" id="size_xl" name="size" value="XL" />
+            <label for="size_xl">XL</label>
+          </div>
+          <h2>59,99 zł</h2>
+          <button class="button_cart">🛒 Do koszyka</button>
+        </div>
+      </div>
+    </main>
+
+    <a class="back-button" href="..">Powrót</a>
   </body>
 </html>
