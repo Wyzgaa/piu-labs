@@ -2,11 +2,47 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <title>Lab 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <title>Kanban</title>
   </head>
   <body>
-    <h1>Lab 4</h1>
-    <a href="..">Powrót</a>
+    <div class="column" data-status="todo">
+      <div class="column-header">
+        <h2>Do zrobienia (<span class="count">0</span>)</h2>
+        <div>
+          <button class="add">Dodaj kartę</button>
+          <button class="colorize">Koloruj kolumnę</button>
+          <button class="sort">Sortuj</button>
+        </div>
+      </div>
+      <div class="cards"></div>
+    </div>
+
+    <div class="column" data-status="doing">
+      <div class="column-header">
+        <h2>W trakcie (<span class="count">0</span>)</h2>
+        <div>
+          <button class="add">Dodaj kartę</button>
+          <button class="colorize">Koloruj kolumnę</button>
+          <button class="sort">Sortuj</button>
+        </div>
+      </div>
+      <div class="cards"></div>
+    </div>
+
+    <div class="column" data-status="done">
+      <div class="column-header">
+        <h2>Zrobione (<span class="count">0</span>)</h2>
+        <div>
+          <button class="add">Dodaj kartę</button>
+          <button class="colorize">Koloruj kolumnę</button>
+          <button class="sort">Sortuj</button>
+        </div>
+      </div>
+      <div class="cards"></div>
+    </div>
+    <a href=".." class="back-button">Powrót</a>
+    <script src="kanban.js"></script>
   </body>
 </html>
