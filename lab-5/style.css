@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f9;
+}
+h1 {
+  color: #333;
+}
+.controls {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.controls button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+#add-square {
+  background-color: #4caf50;
+  color: white;
+}
+#add-circle {
+  background-color: #2196f3;
+  color: white;
+}
+#recolor-squares {
+  background-color: #ff9800;
+  color: white;
+}
+#recolor-circles {
+  background-color: #9c27b0;
+  color: white;
+}
+.counters {
+  margin-top: 15px;
+  font-size: 1.1em;
+}
+.shapes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #e9ecef;
+}
+.shape {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+.shape:hover {
+  transform: scale(1.1);
+}
+.square {
+  border-radius: 5px;
+}
+.circle {
+  border-radius: 50%;
+}

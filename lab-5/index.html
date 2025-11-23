@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kształty</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Kształty</h1>
+
+    <div class="controls">
+      <button id="add-square">Dodaj Kwadrat</button>
+      <button id="add-circle">Dodaj Kółko</button>
+      <button id="recolor-squares">Przekoloruj Kwadraty</button>
+      <button id="recolor-circles">Przekoloruj Kółka</button>
+
+      <div class="counters">
+        Liczba kwadratów: <span id="square-count">0</span> | Liczba kółek:
+        <span id="circle-count">0</span> | Wszystkich:
+        <span id="total-count">0</span>
+      </div>
+    </div>
+
+    <div id="shapes-container" class="shapes-container"></div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
