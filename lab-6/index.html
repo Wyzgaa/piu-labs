@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ajax Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 20px auto;
+      }
+      button {
+        margin-right: 10px;
+        padding: 6px 10px;
+      }
+      #loader {
+        display: none;
+        font-style: italic;
+        margin: 10px 0;
+        color: blue;
+      }
+      #message {
+        margin: 10px 0;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ajax Demo</h1>
+
+    <button id="btn-load">Pobierz dane</button>
+    <button id="btn-error">Wywołaj błąd</button>
+    <button id="btn-reset">Reset</button>
+
+    <div id="loader">Ładowanie...</div>
+    <div id="message"></div>
+
+    <ul id="posts"></ul>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
