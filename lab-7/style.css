@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 40px 0;
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  gap: 24px;
+  justify-content: center;
+}
+
+product-card {
+  display: block;
+}
+
+product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}

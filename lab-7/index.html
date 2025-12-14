@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab-7</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="./components/product-card/ProductCard.js"
+    ></script>
+  </head>
+  <body>
+    <main class="products">
+      <product-card>
+        <img slot="image" src="./images/tshirt.png" alt="Koszulka" />
+
+        <span slot="promo" class="promo">-20%</span>
+
+        <span slot="name">Koszulka Basic</span>
+        <span slot="price">79,99 zł</span>
+
+        <span slot="colors">Czarny</span>
+        <span slot="colors">Biały</span>
+
+        <span slot="sizes">S</span>
+        <span slot="sizes">M</span>
+        <span slot="sizes">L</span>
+      </product-card>
+      <product-card>
+        <img slot="image" src="./images/kaczka.webp" alt="Kaczka" />
+
+        <span slot="promo" class="promo">-10%</span>
+
+        <span slot="name">Gumowa Kaczka</span>
+        <span slot="price">15.99 zł</span>
+
+        <span slot="colors">Żółty</span>
+      </product-card>
+      <product-card>
+        <img slot="image" src="./images/mis.jpg" alt="Miś Pluszowy" />
+        <span slot="promo" class="promo">-20%</span>
+        <span slot="name">Miś Pluszowy Bruno</span>
+        <span slot="price">39.50 zł</span>
+        <span slot="colors">Brązowy</span>
+      </product-card>
+
+      <product-card>
+        <img slot="image" src="./images/samochodzik.jpg" alt="Samochodzik RC" />
+        <span slot="promo" class="promo">NOWOŚĆ</span>
+        <span slot="name">Zabawkowy Samochód</span>
+        <span slot="price">89.99 zł</span>
+        <span slot="colors">Czerwony</span>
+        <span slot="colors">Niebieski</span>
+        <span slot="colors">Czarny</span>
+      </product-card>
+
+      <product-card>
+        <img slot="image" src="./images/klocki.jpg" alt="Klocki Drewniane" />
+        <span slot="name">Zestaw Klocków Drewnianych (100 el.)</span>
+        <span slot="price">55.00 zł</span>
+        <span slot="colors">Naturalny</span>
+      </product-card>
+
+      <product-card>
+        <img slot="image" src="./images/lalka.jpg" alt="Lalka" />
+        <span slot="promo" class="promo">HIT</span>
+        <span slot="name">Lalka</span>
+        <span slot="price">74.90 zł</span>
+      </product-card>
+    </main>
+  </body>
+</html>
