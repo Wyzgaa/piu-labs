@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "name": "Koszulka Basic",
+    "price": 79.99,
+    "image": "./images/tshirt.png",
+    "colors": ["Czarny", "Biały"],
+    "promo": "-20%"
+  },
+  {
+    "id": 2,
+    "name": "Gumowa Kaczka",
+    "price": 15.99,
+    "image": "./images/kaczka.webp",
+    "colors": ["Żółty"],
+    "promo": "-10%"
+  },
+  {
+    "id": 3,
+    "name": "Miś Pluszowy Bruno",
+    "price": 39.5,
+    "image": "./images/mis.jpg",
+    "colors": ["Brązowy"],
+    "promo": "-20%"
+  },
+  {
+    "id": 4,
+    "name": "Zabawkowy Samochód",
+    "price": 89.99,
+    "image": "./images/samochodzik.jpg",
+    "colors": ["Czerwony", "Niebieski", "Czarny"],
+    "promo": "NOWOŚĆ"
+  },
+  {
+    "id": 5,
+    "name": "Zestaw Klocków Drewnianych (100 el.)",
+    "price": 55.0,
+    "image": "./images/klocki.jpg",
+    "colors": ["Naturalny"]
+  },
+  {
+    "id": 6,
+    "name": "Lalka",
+    "price": 74.9,
+    "image": "./images/lalka.jpg",
+    "promo": "HIT"
+  }
+]
